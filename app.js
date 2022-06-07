@@ -1,29 +1,15 @@
-class Employee {
-	constructor(name, position, department) {
-		this.name = name;
-		this.position = position;
-		this.department = department;
-	}
-}
+class User{
+    #name;
+    comstructor(name) {
+        this.#name = name;
+    }
 
-class Name{
-    constructor(name) {
-        this.name = name;
+    getShow() {
+        console.log(this.#name);
     }
 }
 
-class Departament{
-    constructor(departament) {
-        this.departament = departament;
-    }
-    
-}
 
+let user = new User('petro');
 
-let name = new Name('pet');
-let employee = new Employee(name, 'right', 'it');
-
-console.log(employee.name);
-console.log(employee.position);
-console.log(employee.department);
-
+console.log(user.name);
