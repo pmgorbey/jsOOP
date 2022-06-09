@@ -1,15 +1,5 @@
-class User{
-    #name;
-    comstructor(name) {
-        this.#name = name;
-    }
+import User from './User';
 
-    getShow() {
-        console.log(this.#name);
-    }
-}
-
-
-let user = new User('petro');
-
-console.log(user.name);
+let user = new User('john');
+let name = user.getName();
+console.log(name);
